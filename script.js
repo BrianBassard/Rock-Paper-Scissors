@@ -22,6 +22,9 @@ const game = () => {
             option.addEventListener('click', function() {
                 const computerNumber = Math.floor(Math.random() * 3);
                 const computerChoice = computerOptions[computerNumber];
+
+                //Computer and Player Hands
+
                 playerHand.src = `./icons/${this.textContent}.png`;
                 computerHand.src = `./icons/${computerChoice}.png`;
             });
@@ -33,6 +36,9 @@ const game = () => {
             winner.textContent = 'It is a tie';
             return;
         };
+
+        //Results of Hands
+
         if(playerChoice === 'rock'){
             if(computerChoice === 'scissors'){
                 winner.textContent = 'Player Wins';

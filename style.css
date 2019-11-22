@@ -10,12 +10,18 @@ section {
     font-family: "Roboto Light", sans-serif;
 }
 
+button {
+    box-shadow: 0 3px 3px #707077;
+    transition: 0.2s;
+}
+
 .score {
     color: #fff;
     height: 20vh;
     display: flex;
     justify-content: space-around;
     align-items: center;
+    font-weight: bold;
 }
 
 .score h2 { font-size: 30px; }
@@ -44,8 +50,9 @@ section {
     height: 50px;
     border: none;
     color: #fff;
-    font-size: 20px;
-    background: #696969;
+    font-size: 30px;
+    font-weight: bold;
+    background: #ffe9c8;
     border-radius: 15px;
     cursor: pointer;
 }
@@ -81,4 +88,13 @@ div.fadeOut {
 div.fadeIn {
     opacity: 1;
     pointer-events: all;
+}
+
+button:active {
+    box-shadow: none;
+    transform: scale(0.97);
+}
+
+.hands {
+    opacity: 0.85;
 }
